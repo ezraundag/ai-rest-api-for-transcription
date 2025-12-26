@@ -40,8 +40,15 @@ data = {
 # Send a HTTP POST to REST API endpoint for Batch Speech to text, with arguments set to initialized variables: url, paramas, data, headers
 res = requests.post(url,params=params, json=data, headers=headers)
 
-# Print the response body, which contains the transcription id needed to fetch the transcription results
+
+# convert response body to json formated string 
 jsonres = json.dumps(res.json())
+
+# convert json formated string to python object
 data = json.loads(jsonres)
+
+# convert python object back to json formated string 
 prettydata = json.dumps(data, indent=2)
+
+# Print the response body, which contains the transcription id needed to fetch the transcription results
 print(prettydata)
