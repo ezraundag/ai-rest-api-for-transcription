@@ -1,4 +1,4 @@
-import requests
+import requests 
 import json
 
 # SET url variable to REST API endpoint for Batch Speech to text. The endpoint can be found in your Azure console.
