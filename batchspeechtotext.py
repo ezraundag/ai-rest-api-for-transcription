@@ -6,6 +6,7 @@ url = 'https://eastus.api.cognitive.microsoft.com/speechtotext/v3.2/transcriptio
 
 # SET contentUrl to URL location of audio file for transcription. The file has to be made accessible to the Azure transcription service
 contentUrl='https://locationtoaudiofile.test/audiofiletest.m4a'
+
 # SET locale of language as spoken in the audio file
 locale = 'en-US'
 
@@ -16,6 +17,7 @@ params = {
     "sparsity":1.0,
     "get_fingerprint":False
 }
+
 # SET Ocp-Apim-Subscription-Key to the 32-character Private Key, which is required to call Azure Rest API endpoint. This key can be found in your Azure console.
 headers={
     "Ocp-Apim-Subscription-Key":"aabbccddeeffgghhiijjkkllmmnnooppqq",
@@ -37,6 +39,7 @@ data = {
     },
     "customProperties": {}
 }
+
 # Send a HTTP POST to REST API endpoint for Batch Speech to text, with arguments set to initialized variables: url, paramas, data, headers
 res = requests.post(url,params=params, json=data, headers=headers)
 
