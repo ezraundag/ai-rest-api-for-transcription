@@ -1,6 +1,6 @@
 **Transcribing audio files using Microsoft Azure Cognitize Service - Foundry Tools**
 
-This repo contains two python files that transcribe an audio file and save the transcription to a word document. These scripts can be useful if you need to batch-transcribe multiple large audio files from long interviews. 
+This repo contains two python scripts that transcribe an audio file and save the transcription to a word document. These scripts can be useful if you need to batch-transcribe multiple large audio files from long interviews. 
 
 I wrote these scripts to transcribe and code collected interviews for qualitative research.
 
